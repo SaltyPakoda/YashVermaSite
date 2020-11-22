@@ -1,0 +1,27 @@
+span {
+  color: red;
+  font-size: 7.5vmax;
+  font-family: 'Roboto Slab', serif, 'Texturina', serif; }
+
+body {
+  background-color: #131212; }
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%); }
+
+.header {
+  background-image: -webkit-linear-gradient(2deg, #f7ae97, #f8c987);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 3s infinite linear; }
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg); }
+  to {
+    -webkit-filter: hue-rotate(-360deg); } }
