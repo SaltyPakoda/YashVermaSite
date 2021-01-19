@@ -1,20 +1,93 @@
-span {
-  color: red;
-  font-size: 7.5vmax;
-  font-family: 'Roboto Slab', serif, 'Texturina', serif; }
-
 body {
-  background-color: #131212; }
+  background-color: #E1E1E3; }
 
-.container {
-  position: absolute;
+section {
+  position: relative;
+  min-height: 100vh;
+  padding: 0 5vw; }
+
+.centered {
+  position: fixed;
   top: 50%;
   left: 50%;
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%); }
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%); }
 
-.header {
+.links {
+  position: absolute;
+  right: 5rem;
+  top: 4rem; }
+
+#persistent-buttons {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  align-items: baseline;
+  right: 2vw;
+  top: 3.6rem;
+  z-index: 5000; }
+
+#persistent-buttons a {
+  margin-right: 16px;
+  font-size: 1.2rem;
+  transform: translate(0, 40%);
+  color: black;
+  transition-property: color;
+  transition-duration: 0.2s;
+  position: relative; }
+
+#persistent-buttons a:hover {
+  color: #05ff56; }
+
+#persistent-buttons a:active {
+  color: #a09f9f; }
+
+#persistent-buttons a p {
+  position: absolute;
+  top: 12px;
+  left: 6px;
+  background-color: #686868;
+  padding: 4px 6px;
+  font-size: 0.8rem;
+  transition-property: opacity;
+  transition-duration: 0.2s; }
+
+.nametext {
+  position: absolute;
+  top: 6rem;
+  left: 4rem;
+  color: #134FE6;
+  font-size: 2rem;
+  font-family: 'Lora', serif, 'Texturina', serif;
+  font-style: bold;
+  line-height: 3.6vw; }
+
+.midcol {
+  background-color: white;
+  margin: 4rem 24rem 4rem 2rem;
+  padding: 4rem; }
+
+.ribbon {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro";
+  font-weight: bold;
+  font-size: 0.8125rem;
+  display: inline;
+  vertical-align: super;
+  background-color: #EFFF00; }
+
+.description {
+  position: absolute;
+  top: 10rem;
+  left: 4rem;
+  right: 18rem;
+  font-family: "Source Sans Pro";
+  font-size: 100%; }
+
+.headerrainbow {
   background-image: -webkit-linear-gradient(2deg, #f7ae97, #f8c987);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
