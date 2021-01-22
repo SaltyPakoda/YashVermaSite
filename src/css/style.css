@@ -1,6 +1,7 @@
 body {
   max-height: 100vh;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+  margin: 0; }
 
 section {
   position: relative;
@@ -14,7 +15,26 @@ section {
   flex-wrap: nowrap;
   overflow-x: visible;
   overflow-y: hidden;
-  min-height: 100vh; }
+  min-height: 100vh;
+  position: relative; }
+  .scrolling-wrapper-flexbox #left {
+    display: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100vh;
+    background-color: red;
+    z-index: 30; }
+  .scrolling-wrapper-flexbox #right {
+    display: hidden;
+    z-index: 30;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100vh;
+    background-color: green; }
   .scrolling-wrapper-flexbox section {
     flex: 0 0 auto; }
   .scrolling-wrapper-flexbox::-webkit-scrollbar {

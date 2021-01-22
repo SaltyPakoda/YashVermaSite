@@ -1,7 +1,7 @@
 body {
   max-height: 100vh;
   overflow-y:hidden;
-  
+  margin: 0;
 }
 
 section {
@@ -19,6 +19,32 @@ section {
   overflow-x: visible;
   overflow-y:hidden;  
   min-height: 100vh;
+  position: relative;
+
+  #left
+  {
+    display: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100vh;
+    background-color: red;
+    z-index: 30;
+  }
+
+  #right
+  {
+    display: hidden;
+    z-index: 30;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100vh;
+    background-color: green;
+  }
+
   section {
     flex: 0 0 auto;
   }
