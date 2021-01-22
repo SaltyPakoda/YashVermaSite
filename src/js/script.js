@@ -1,3 +1,12 @@
+import EdgeScroll from 'edge-scroll'
+
+var edgeScroll = new EdgeScroll(120, 750)
+
+
+
+
+
+
 function scaleFontSize(element) {
     var container = document.getElementById(element);
 
@@ -11,8 +20,5 @@ function scaleFontSize(element) {
     }
 }
 
-html {
-	background: #1d1f20;
-	margin:  0 4rem;
-}
+
 
