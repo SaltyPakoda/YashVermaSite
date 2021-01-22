@@ -1,0 +1,138 @@
+body {
+  max-height: 100vh;
+  overflow-y:hidden;
+  
+}
+
+section {
+  position: relative;
+  min-height: 100vh;
+  min-width:100vw;
+  display: flex;
+  
+  
+}
+.scrolling-wrapper-flexbox {
+  background-color: #E1E1E3;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: visible;
+  overflow-y:hidden;  
+  min-height: 100vh;
+  section {
+    flex: 0 0 auto;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.container {
+  height:100%;
+}
+
+
+
+.me {
+  position: absolute;
+  overflow:hidden;
+  background-color: white;
+  margin: 4vh 24vw 1vh 2vw;
+  padding: 4vh 10vw 80vh 60vw;
+  
+}
+
+
+
+#persistent-buttons {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  align-items: baseline;
+  right: 2vw;
+  top: 3.6rem;
+  z-index: 5000; }
+  #persistent-buttons a {
+    margin-right: 16px;
+    font-size: 1.2rem;
+    transform: translate(0, 40%);
+    color: black;
+    transition-property: color;
+    transition-duration: 0.2s;
+    position: relative; }
+    #persistent-buttons a:hover {
+      color: #05ff56; }
+    #persistent-buttons a:active {
+      color: #a09f9f; }
+    #persistent-buttons a p {
+      position: absolute;
+      top: 12px;
+      left: 6px;
+      background-color: #686868;
+      padding: 4px 6px;
+      font-size: 0.8rem;
+      transition-property: opacity;
+      transition-duration: 0.2s; }
+
+#name {
+  position: absolute;
+  top: 6rem;
+  left:4rem;
+  color: #134FE6;
+  font-size: 2rem;
+  font-family: 'Lora', serif, 'Texturina', serif;
+  font-style: bold;
+  line-height: 3.6vw;
+  
+  }    
+
+
+
+#ribbon {
+  position: absolute;
+  top: 4rem;
+  left:4rem;
+  text-transform:uppercase;
+  font-family: "Source Sans Pro";
+  font-weight:bold;
+  font-size:0.8125rem;
+  display:inline;
+  vertical-align:super;
+  background-color:#EFFF00;
+}
+
+#description {
+  position: absolute;
+  top: 10rem;
+  left:4rem;
+  right:18rem;
+  font-family: "Source Sans Pro";
+  font-size: 100%;
+}
+
+#link {
+  position: absolute;
+  align-items: baseline;
+  right: 10vw;
+  top: 42vh;
+  z-index: 5000;
+  font-family: "Source Sans Pro";
+  font-size: 40rem;}
+  
+  #link a {
+    margin-right: 16px;
+    font-size: 2.2rem;
+    text-decoration: none;
+    transform:scale(100%);
+    color: black;
+    transition-property: color;
+    transition-duration: 0.2s;
+    position: relative; }
+    #link a:hover {
+      color: #05ff56; }
+    #link a:active {
+      color: #a09f9f; }
+    
+#gallery {
+  padding: 50vh 50vw;  
+}
