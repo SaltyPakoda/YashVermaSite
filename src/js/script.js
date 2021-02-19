@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const scrollWidthRight = 264; //The maximum distance the cursor can be at from the extreme right of the screen before it stops scrolling right
     const scrollWidthLeft = 140; // Same but for left
     const scrollSpeed = 6000; // Scroll Speed per second
-    const pollDelay = 0.5; // Milliseconds between scroll tries, less polldelay = more smooth scrolling
+    const pollDelay = 0.1; // Milliseconds between scroll tries, less polldelay = more smooth scrolling
     const minimumFactor = 0.1;
-    const maximumFactor = 4;
+    const maximumFactor = 25;
     const factorDelta = maximumFactor - minimumFactor;
     const scrollElement = document.getElementsByClassName("scrolling-wrapper-flexbox")[0];
     const leftDebug = document.getElementById("left");
@@ -49,3 +49,4 @@ document.addEventListener("DOMContentLoaded", () => {
         scrollElement.scrollBy(scrollSpeed * dir * pollDelay/1000, 0);
     }, pollDelay);
 });
+

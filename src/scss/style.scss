@@ -1,6 +1,7 @@
 body {
   max-height: 100vh;
   overflow-y:hidden;
+  background-color: #E1E1E3;
   margin: 0;
 }
 
@@ -13,7 +14,8 @@ section {
   
 }
 .scrolling-wrapper-flexbox {
-  background-color: #E1E1E3;
+  
+  background-image: linear-gradient(to right, #E1E1E3, #d9d9e9);
   display: flex;
   flex-wrap: nowrap;
   overflow-x: visible;
@@ -23,7 +25,7 @@ section {
 
   #left
   {
-    display: hidden;
+    display: none;
     position: fixed;
     left: 0;
     top: 0;
@@ -35,7 +37,7 @@ section {
 
   #right
   {
-    display: hidden;
+    display: none;
     z-index: 30;
     position: fixed;
     right: 0;
@@ -127,26 +129,35 @@ section {
   background-color:#EFFF00;
 }
 
+#box {
+  margin-right: -10px;
+}
+
 #description {
   position: absolute;
   top: 10rem;
-  left:4rem;
+  left:4.25rem;
   right:18rem;
   font-family: "Source Sans Pro";
-  font-size: 100%;
+  font-size: 130%;
+  word-wrap: break-word; 
 }
 
 #link {
   position: absolute;
-  align-items: baseline;
-  right: 10vw;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  right: 5vw;
   top: 42vh;
   z-index: 5000;
   font-family: "Source Sans Pro";
-  font-size: 40rem;}
+  font-size: 40rem;
+  max-width: 15vw;
+   }
   
-  #link a {
-    margin-right: 16px;
+  #link div {
+    margin-right: 0.5vw;
     font-size: 2.2rem;
     text-decoration: none;
     transform:scale(100%);
@@ -154,11 +165,41 @@ section {
     transition-property: color;
     transition-duration: 0.2s;
     position: relative; }
-    #link a:hover {
+    #link div:hover {
       color: #05ff56; }
-    #link a:active {
+    #link div:active {
       color: #a09f9f; }
     
 #gallery {
-  padding: 50vh 50vw;  
+  padding: 5vh 5vw;  
 }
+#dirn {
+  margin-top:-5vh;
+}
+
+.grid { 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
+  justify-items: center;
+  }
+.grid img {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  max-width: 20vw;
+}
+
+/*
+.grid img:hover{
+  transform: scale(2);
+  position: absolute;
+  transform: translateX(-50%);
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  border: solid black;
+   
+}
+*/
